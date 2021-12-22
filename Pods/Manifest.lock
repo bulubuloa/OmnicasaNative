@@ -1,0 +1,42 @@
+PODS:
+  - Alamofire (5.5.0)
+  - AppAuth (1.4.0):
+    - AppAuth/Core (= 1.4.0)
+    - AppAuth/ExternalUserAgent (= 1.4.0)
+  - AppAuth/Core (1.4.0)
+  - AppAuth/ExternalUserAgent (1.4.0)
+  - lottie-ios (3.3.0)
+  - RxCocoa (6.2.0):
+    - RxRelay (= 6.2.0)
+    - RxSwift (= 6.2.0)
+  - RxRelay (6.2.0):
+    - RxSwift (= 6.2.0)
+  - RxSwift (6.2.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.5)
+  - AppAuth
+  - lottie-ios
+  - RxCocoa (= 6.2.0)
+  - RxSwift (= 6.2.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AppAuth
+    - lottie-ios
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+
+SPEC CHECKSUMS:
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
+  lottie-ios: 6ac74dcc09904798f59b18cb3075c089d76be9ae
+  RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
+  RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
+  RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
+
+PODFILE CHECKSUM: 4f8796e3ed1048c82830f44e1da6fc3a37e1647b
+
+COCOAPODS: 1.11.2

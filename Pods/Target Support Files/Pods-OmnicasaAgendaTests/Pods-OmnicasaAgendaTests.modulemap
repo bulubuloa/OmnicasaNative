@@ -1,0 +1,6 @@
+framework module Pods_OmnicasaAgendaTests {
+  umbrella header "Pods-OmnicasaAgendaTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

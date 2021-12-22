@@ -1,0 +1,903 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A95C70B983793F445DBF90C /* Pods_OmnicasaAgenda_OmnicasaAgendaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D901426AB8BE86BE0BC039E7 /* Pods_OmnicasaAgenda_OmnicasaAgendaUITests.framework */; };
+		2E6190F539ED0BB4F2A25642 /* Pods_OmnicasaAgenda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B6AFF8390C1135D27F8F410 /* Pods_OmnicasaAgenda.framework */; };
+		52C69783B3E2D2073EBE529E /* Pods_OmnicasaAgendaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51403472C162423DB97C00CA /* Pods_OmnicasaAgendaTests.framework */; };
+		E8833EAF2772CC6C00D69F67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8833EAE2772CC6C00D69F67 /* AppDelegate.swift */; };
+		E8833EB12772CC6C00D69F67 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8833EB02772CC6C00D69F67 /* SceneDelegate.swift */; };
+		E8833EB32772CC6C00D69F67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8833EB22772CC6C00D69F67 /* ViewController.swift */; };
+		E8833EB62772CC6C00D69F67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8833EB42772CC6C00D69F67 /* Main.storyboard */; };
+		E8833EB82772CC6E00D69F67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8833EB72772CC6E00D69F67 /* Assets.xcassets */; };
+		E8833EBB2772CC6E00D69F67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8833EB92772CC6E00D69F67 /* LaunchScreen.storyboard */; };
+		E8833EC62772CC6F00D69F67 /* OmnicasaAgendaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8833EC52772CC6F00D69F67 /* OmnicasaAgendaTests.swift */; };
+		E8833ED02772CC6F00D69F67 /* OmnicasaAgendaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8833ECF2772CC6F00D69F67 /* OmnicasaAgendaUITests.swift */; };
+		E8833ED22772CC6F00D69F67 /* OmnicasaAgendaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8833ED12772CC6F00D69F67 /* OmnicasaAgendaUITestsLaunchTests.swift */; };
+		E8833EE22772D56100D69F67 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8833EE12772D56100D69F67 /* WelcomeViewController.swift */; };
+		E8E43C7A2772DF40004A0014 /* OAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E43C792772DF40004A0014 /* OAuthService.swift */; };
+		E8E43C7C2772FE1F004A0014 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E43C7B2772FE1F004A0014 /* MainViewController.swift */; };
+		E8E43C7E2772FF0E004A0014 /* AgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E43C7D2772FF0E004A0014 /* AgendaViewController.swift */; };
+		E8E43C8027730242004A0014 /* OmnicasaWebAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E43C7F27730242004A0014 /* OmnicasaWebAPI.swift */; };
+		E8E43C83277304B3004A0014 /* AppointmentsReq.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E43C82277304B3004A0014 /* AppointmentsReq.swift */; };
+		E8E43C8627730551004A0014 /* AppointmentsRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E43C8527730551004A0014 /* AppointmentsRes.swift */; };
+		E8E43C8927730701004A0014 /* Loopable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E43C8827730701004A0014 /* Loopable.swift */; };
+		E8E43C8B27731746004A0014 /* Array+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E43C8A27731746004A0014 /* Array+Ex.swift */; };
+		E8E43C8E27731A6E004A0014 /* AbstractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E43C8D27731A6E004A0014 /* AbstractViewController.swift */; };
+		E8E43C9027731EAA004A0014 /* agendaloading.json in Resources */ = {isa = PBXBuildFile; fileRef = E8E43C8F27731EAA004A0014 /* agendaloading.json */; };
+		E8E43C9327731FA2004A0014 /* AppointmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E43C9127731FA2004A0014 /* AppointmentTableViewCell.swift */; };
+		E8E43C9427731FA2004A0014 /* AppointmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8E43C9227731FA2004A0014 /* AppointmentTableViewCell.xib */; };
+		E8E43C96277328B2004A0014 /* AgendaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E43C95277328B2004A0014 /* AgendaViewModel.swift */; };
+		E8E43C98277328E2004A0014 /* AbstractViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E43C97277328E2004A0014 /* AbstractViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E8833EC22772CC6F00D69F67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8833EA32772CC6C00D69F67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8833EAA2772CC6C00D69F67;
+			remoteInfo = OmnicasaAgenda;
+		};
+		E8833ECC2772CC6F00D69F67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8833EA32772CC6C00D69F67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8833EAA2772CC6C00D69F67;
+			remoteInfo = OmnicasaAgenda;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2B0E6624AAC20022CA98C8B4 /* Pods-OmnicasaAgendaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmnicasaAgendaTests.debug.xcconfig"; path = "Target Support Files/Pods-OmnicasaAgendaTests/Pods-OmnicasaAgendaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3B6AFF8390C1135D27F8F410 /* Pods_OmnicasaAgenda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OmnicasaAgenda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41039E00377A7103AB52E562 /* Pods-OmnicasaAgendaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmnicasaAgendaTests.release.xcconfig"; path = "Target Support Files/Pods-OmnicasaAgendaTests/Pods-OmnicasaAgendaTests.release.xcconfig"; sourceTree = "<group>"; };
+		51403472C162423DB97C00CA /* Pods_OmnicasaAgendaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OmnicasaAgendaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		631B1CAEF5B7A48E9D108872 /* Pods-OmnicasaAgenda-OmnicasaAgendaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmnicasaAgenda-OmnicasaAgendaUITests.debug.xcconfig"; path = "Target Support Files/Pods-OmnicasaAgenda-OmnicasaAgendaUITests/Pods-OmnicasaAgenda-OmnicasaAgendaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D641187706CCE2DD3F8B6501 /* Pods-OmnicasaAgenda-OmnicasaAgendaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmnicasaAgenda-OmnicasaAgendaUITests.release.xcconfig"; path = "Target Support Files/Pods-OmnicasaAgenda-OmnicasaAgendaUITests/Pods-OmnicasaAgenda-OmnicasaAgendaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D901426AB8BE86BE0BC039E7 /* Pods_OmnicasaAgenda_OmnicasaAgendaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OmnicasaAgenda_OmnicasaAgendaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6399FC3AF21D97DF434D0FB /* Pods-OmnicasaAgenda.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmnicasaAgenda.debug.xcconfig"; path = "Target Support Files/Pods-OmnicasaAgenda/Pods-OmnicasaAgenda.debug.xcconfig"; sourceTree = "<group>"; };
+		E8833EAB2772CC6C00D69F67 /* OmnicasaAgenda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OmnicasaAgenda.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8833EAE2772CC6C00D69F67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E8833EB02772CC6C00D69F67 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E8833EB22772CC6C00D69F67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E8833EB52772CC6C00D69F67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E8833EB72772CC6E00D69F67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8833EBA2772CC6E00D69F67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E8833EBC2772CC6E00D69F67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8833EC12772CC6F00D69F67 /* OmnicasaAgendaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OmnicasaAgendaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8833EC52772CC6F00D69F67 /* OmnicasaAgendaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmnicasaAgendaTests.swift; sourceTree = "<group>"; };
+		E8833ECB2772CC6F00D69F67 /* OmnicasaAgendaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OmnicasaAgendaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8833ECF2772CC6F00D69F67 /* OmnicasaAgendaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmnicasaAgendaUITests.swift; sourceTree = "<group>"; };
+		E8833ED12772CC6F00D69F67 /* OmnicasaAgendaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmnicasaAgendaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E8833EE12772D56100D69F67 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		E8E43C792772DF40004A0014 /* OAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthService.swift; sourceTree = "<group>"; };
+		E8E43C7B2772FE1F004A0014 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E8E43C7D2772FF0E004A0014 /* AgendaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaViewController.swift; sourceTree = "<group>"; };
+		E8E43C7F27730242004A0014 /* OmnicasaWebAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmnicasaWebAPI.swift; sourceTree = "<group>"; };
+		E8E43C82277304B3004A0014 /* AppointmentsReq.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsReq.swift; sourceTree = "<group>"; };
+		E8E43C8527730551004A0014 /* AppointmentsRes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsRes.swift; sourceTree = "<group>"; };
+		E8E43C8827730701004A0014 /* Loopable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loopable.swift; sourceTree = "<group>"; };
+		E8E43C8A27731746004A0014 /* Array+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Ex.swift"; sourceTree = "<group>"; };
+		E8E43C8D27731A6E004A0014 /* AbstractViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractViewController.swift; sourceTree = "<group>"; };
+		E8E43C8F27731EAA004A0014 /* agendaloading.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = agendaloading.json; sourceTree = "<group>"; };
+		E8E43C9127731FA2004A0014 /* AppointmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentTableViewCell.swift; sourceTree = "<group>"; };
+		E8E43C9227731FA2004A0014 /* AppointmentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppointmentTableViewCell.xib; sourceTree = "<group>"; };
+		E8E43C95277328B2004A0014 /* AgendaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaViewModel.swift; sourceTree = "<group>"; };
+		E8E43C97277328E2004A0014 /* AbstractViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractViewModel.swift; sourceTree = "<group>"; };
+		F407BF80BFDAD9573E861A7F /* Pods-OmnicasaAgenda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmnicasaAgenda.release.xcconfig"; path = "Target Support Files/Pods-OmnicasaAgenda/Pods-OmnicasaAgenda.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8833EA82772CC6C00D69F67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E6190F539ED0BB4F2A25642 /* Pods_OmnicasaAgenda.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8833EBE2772CC6F00D69F67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C69783B3E2D2073EBE529E /* Pods_OmnicasaAgendaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8833EC82772CC6F00D69F67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A95C70B983793F445DBF90C /* Pods_OmnicasaAgenda_OmnicasaAgendaUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6ECC65C47C9029246FD1A5EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B6AFF8390C1135D27F8F410 /* Pods_OmnicasaAgenda.framework */,
+				D901426AB8BE86BE0BC039E7 /* Pods_OmnicasaAgenda_OmnicasaAgendaUITests.framework */,
+				51403472C162423DB97C00CA /* Pods_OmnicasaAgendaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		86D62FE0F3455EE92610F738 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E6399FC3AF21D97DF434D0FB /* Pods-OmnicasaAgenda.debug.xcconfig */,
+				F407BF80BFDAD9573E861A7F /* Pods-OmnicasaAgenda.release.xcconfig */,
+				631B1CAEF5B7A48E9D108872 /* Pods-OmnicasaAgenda-OmnicasaAgendaUITests.debug.xcconfig */,
+				D641187706CCE2DD3F8B6501 /* Pods-OmnicasaAgenda-OmnicasaAgendaUITests.release.xcconfig */,
+				2B0E6624AAC20022CA98C8B4 /* Pods-OmnicasaAgendaTests.debug.xcconfig */,
+				41039E00377A7103AB52E562 /* Pods-OmnicasaAgendaTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E8833EA22772CC6C00D69F67 = {
+			isa = PBXGroup;
+			children = (
+				E8E43C8F27731EAA004A0014 /* agendaloading.json */,
+				E8833EAD2772CC6C00D69F67 /* OmnicasaAgenda */,
+				E8833EC42772CC6F00D69F67 /* OmnicasaAgendaTests */,
+				E8833ECE2772CC6F00D69F67 /* OmnicasaAgendaUITests */,
+				E8833EAC2772CC6C00D69F67 /* Products */,
+				86D62FE0F3455EE92610F738 /* Pods */,
+				6ECC65C47C9029246FD1A5EB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E8833EAC2772CC6C00D69F67 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8833EAB2772CC6C00D69F67 /* OmnicasaAgenda.app */,
+				E8833EC12772CC6F00D69F67 /* OmnicasaAgendaTests.xctest */,
+				E8833ECB2772CC6F00D69F67 /* OmnicasaAgendaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8833EAD2772CC6C00D69F67 /* OmnicasaAgenda */ = {
+			isa = PBXGroup;
+			children = (
+				E8E43C8C27731A04004A0014 /* Cells */,
+				E8E43C87277306DC004A0014 /* Utils */,
+				E8E43C782772DF01004A0014 /* Services */,
+				E8833EE02772D52000D69F67 /* ViewModels */,
+				E8833EDF2772D51600D69F67 /* Models */,
+				E8833EDE2772D50900D69F67 /* Views */,
+				E8833EAE2772CC6C00D69F67 /* AppDelegate.swift */,
+				E8833EB02772CC6C00D69F67 /* SceneDelegate.swift */,
+				E8833EB22772CC6C00D69F67 /* ViewController.swift */,
+				E8833EB42772CC6C00D69F67 /* Main.storyboard */,
+				E8833EB72772CC6E00D69F67 /* Assets.xcassets */,
+				E8833EB92772CC6E00D69F67 /* LaunchScreen.storyboard */,
+				E8833EBC2772CC6E00D69F67 /* Info.plist */,
+			);
+			path = OmnicasaAgenda;
+			sourceTree = "<group>";
+		};
+		E8833EC42772CC6F00D69F67 /* OmnicasaAgendaTests */ = {
+			isa = PBXGroup;
+			children = (
+				E8833EC52772CC6F00D69F67 /* OmnicasaAgendaTests.swift */,
+			);
+			path = OmnicasaAgendaTests;
+			sourceTree = "<group>";
+		};
+		E8833ECE2772CC6F00D69F67 /* OmnicasaAgendaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E8833ECF2772CC6F00D69F67 /* OmnicasaAgendaUITests.swift */,
+				E8833ED12772CC6F00D69F67 /* OmnicasaAgendaUITestsLaunchTests.swift */,
+			);
+			path = OmnicasaAgendaUITests;
+			sourceTree = "<group>";
+		};
+		E8833EDE2772D50900D69F67 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E8833EE12772D56100D69F67 /* WelcomeViewController.swift */,
+				E8E43C7B2772FE1F004A0014 /* MainViewController.swift */,
+				E8E43C7D2772FF0E004A0014 /* AgendaViewController.swift */,
+				E8E43C8D27731A6E004A0014 /* AbstractViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E8833EDF2772D51600D69F67 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E8833EE02772D52000D69F67 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E8E43C95277328B2004A0014 /* AgendaViewModel.swift */,
+				E8E43C97277328E2004A0014 /* AbstractViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E8E43C782772DF01004A0014 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E8E43C842773053B004A0014 /* ResponseModels */,
+				E8E43C8127730485004A0014 /* RequestModels */,
+				E8E43C792772DF40004A0014 /* OAuthService.swift */,
+				E8E43C7F27730242004A0014 /* OmnicasaWebAPI.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E8E43C8127730485004A0014 /* RequestModels */ = {
+			isa = PBXGroup;
+			children = (
+				E8E43C82277304B3004A0014 /* AppointmentsReq.swift */,
+			);
+			path = RequestModels;
+			sourceTree = "<group>";
+		};
+		E8E43C842773053B004A0014 /* ResponseModels */ = {
+			isa = PBXGroup;
+			children = (
+				E8E43C8527730551004A0014 /* AppointmentsRes.swift */,
+			);
+			path = ResponseModels;
+			sourceTree = "<group>";
+		};
+		E8E43C87277306DC004A0014 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E8E43C8827730701004A0014 /* Loopable.swift */,
+				E8E43C8A27731746004A0014 /* Array+Ex.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E8E43C8C27731A04004A0014 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E8E43C9127731FA2004A0014 /* AppointmentTableViewCell.swift */,
+				E8E43C9227731FA2004A0014 /* AppointmentTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E8833EAA2772CC6C00D69F67 /* OmnicasaAgenda */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8833ED52772CC6F00D69F67 /* Build configuration list for PBXNativeTarget "OmnicasaAgenda" */;
+			buildPhases = (
+				DAFD11BF83C6582D46E732B1 /* [CP] Check Pods Manifest.lock */,
+				E8833EA72772CC6C00D69F67 /* Sources */,
+				E8833EA82772CC6C00D69F67 /* Frameworks */,
+				E8833EA92772CC6C00D69F67 /* Resources */,
+				98A5A0B3CBEFC7B8C3D4DF29 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OmnicasaAgenda;
+			productName = OmnicasaAgenda;
+			productReference = E8833EAB2772CC6C00D69F67 /* OmnicasaAgenda.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E8833EC02772CC6F00D69F67 /* OmnicasaAgendaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8833ED82772CC6F00D69F67 /* Build configuration list for PBXNativeTarget "OmnicasaAgendaTests" */;
+			buildPhases = (
+				D681E94FAC79C1BD2630C1E7 /* [CP] Check Pods Manifest.lock */,
+				E8833EBD2772CC6F00D69F67 /* Sources */,
+				E8833EBE2772CC6F00D69F67 /* Frameworks */,
+				E8833EBF2772CC6F00D69F67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8833EC32772CC6F00D69F67 /* PBXTargetDependency */,
+			);
+			name = OmnicasaAgendaTests;
+			productName = OmnicasaAgendaTests;
+			productReference = E8833EC12772CC6F00D69F67 /* OmnicasaAgendaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E8833ECA2772CC6F00D69F67 /* OmnicasaAgendaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8833EDB2772CC6F00D69F67 /* Build configuration list for PBXNativeTarget "OmnicasaAgendaUITests" */;
+			buildPhases = (
+				B8E626460EFD545B6D57A587 /* [CP] Check Pods Manifest.lock */,
+				E8833EC72772CC6F00D69F67 /* Sources */,
+				E8833EC82772CC6F00D69F67 /* Frameworks */,
+				E8833EC92772CC6F00D69F67 /* Resources */,
+				1611EE92CBF7633543A37DA6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8833ECD2772CC6F00D69F67 /* PBXTargetDependency */,
+			);
+			name = OmnicasaAgendaUITests;
+			productName = OmnicasaAgendaUITests;
+			productReference = E8833ECB2772CC6F00D69F67 /* OmnicasaAgendaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8833EA32772CC6C00D69F67 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					E8833EAA2772CC6C00D69F67 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					E8833EC02772CC6F00D69F67 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = E8833EAA2772CC6C00D69F67;
+					};
+					E8833ECA2772CC6F00D69F67 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = E8833EAA2772CC6C00D69F67;
+					};
+				};
+			};
+			buildConfigurationList = E8833EA62772CC6C00D69F67 /* Build configuration list for PBXProject "OmnicasaAgenda" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E8833EA22772CC6C00D69F67;
+			packageReferences = (
+			);
+			productRefGroup = E8833EAC2772CC6C00D69F67 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8833EAA2772CC6C00D69F67 /* OmnicasaAgenda */,
+				E8833EC02772CC6F00D69F67 /* OmnicasaAgendaTests */,
+				E8833ECA2772CC6F00D69F67 /* OmnicasaAgendaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8833EA92772CC6C00D69F67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8833EBB2772CC6E00D69F67 /* LaunchScreen.storyboard in Resources */,
+				E8E43C9427731FA2004A0014 /* AppointmentTableViewCell.xib in Resources */,
+				E8833EB82772CC6E00D69F67 /* Assets.xcassets in Resources */,
+				E8E43C9027731EAA004A0014 /* agendaloading.json in Resources */,
+				E8833EB62772CC6C00D69F67 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8833EBF2772CC6F00D69F67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8833EC92772CC6F00D69F67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1611EE92CBF7633543A37DA6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OmnicasaAgenda-OmnicasaAgendaUITests/Pods-OmnicasaAgenda-OmnicasaAgendaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OmnicasaAgenda-OmnicasaAgendaUITests/Pods-OmnicasaAgenda-OmnicasaAgendaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OmnicasaAgenda-OmnicasaAgendaUITests/Pods-OmnicasaAgenda-OmnicasaAgendaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98A5A0B3CBEFC7B8C3D4DF29 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OmnicasaAgenda/Pods-OmnicasaAgenda-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OmnicasaAgenda/Pods-OmnicasaAgenda-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OmnicasaAgenda/Pods-OmnicasaAgenda-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8E626460EFD545B6D57A587 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OmnicasaAgenda-OmnicasaAgendaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D681E94FAC79C1BD2630C1E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OmnicasaAgendaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAFD11BF83C6582D46E732B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OmnicasaAgenda-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8833EA72772CC6C00D69F67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8E43C8627730551004A0014 /* AppointmentsRes.swift in Sources */,
+				E8833EB32772CC6C00D69F67 /* ViewController.swift in Sources */,
+				E8E43C98277328E2004A0014 /* AbstractViewModel.swift in Sources */,
+				E8E43C96277328B2004A0014 /* AgendaViewModel.swift in Sources */,
+				E8833EE22772D56100D69F67 /* WelcomeViewController.swift in Sources */,
+				E8E43C8927730701004A0014 /* Loopable.swift in Sources */,
+				E8E43C8027730242004A0014 /* OmnicasaWebAPI.swift in Sources */,
+				E8E43C7A2772DF40004A0014 /* OAuthService.swift in Sources */,
+				E8E43C83277304B3004A0014 /* AppointmentsReq.swift in Sources */,
+				E8E43C7C2772FE1F004A0014 /* MainViewController.swift in Sources */,
+				E8E43C8E27731A6E004A0014 /* AbstractViewController.swift in Sources */,
+				E8E43C9327731FA2004A0014 /* AppointmentTableViewCell.swift in Sources */,
+				E8E43C8B27731746004A0014 /* Array+Ex.swift in Sources */,
+				E8833EAF2772CC6C00D69F67 /* AppDelegate.swift in Sources */,
+				E8E43C7E2772FF0E004A0014 /* AgendaViewController.swift in Sources */,
+				E8833EB12772CC6C00D69F67 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8833EBD2772CC6F00D69F67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8833EC62772CC6F00D69F67 /* OmnicasaAgendaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8833EC72772CC6F00D69F67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8833ED02772CC6F00D69F67 /* OmnicasaAgendaUITests.swift in Sources */,
+				E8833ED22772CC6F00D69F67 /* OmnicasaAgendaUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E8833EC32772CC6F00D69F67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8833EAA2772CC6C00D69F67 /* OmnicasaAgenda */;
+			targetProxy = E8833EC22772CC6F00D69F67 /* PBXContainerItemProxy */;
+		};
+		E8833ECD2772CC6F00D69F67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8833EAA2772CC6C00D69F67 /* OmnicasaAgenda */;
+			targetProxy = E8833ECC2772CC6F00D69F67 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E8833EB42772CC6C00D69F67 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8833EB52772CC6C00D69F67 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E8833EB92772CC6E00D69F67 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8833EBA2772CC6E00D69F67 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E8833ED32772CC6F00D69F67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E8833ED42772CC6F00D69F67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E8833ED62772CC6F00D69F67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6399FC3AF21D97DF434D0FB /* Pods-OmnicasaAgenda.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OmnicasaAgenda/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.omnicasa.OmnicasaAgenda;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E8833ED72772CC6F00D69F67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F407BF80BFDAD9573E861A7F /* Pods-OmnicasaAgenda.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OmnicasaAgenda/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.omnicasa.OmnicasaAgenda;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E8833ED92772CC6F00D69F67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B0E6624AAC20022CA98C8B4 /* Pods-OmnicasaAgendaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.omnicasa.OmnicasaAgendaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OmnicasaAgenda.app/OmnicasaAgenda";
+			};
+			name = Debug;
+		};
+		E8833EDA2772CC6F00D69F67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41039E00377A7103AB52E562 /* Pods-OmnicasaAgendaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.omnicasa.OmnicasaAgendaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OmnicasaAgenda.app/OmnicasaAgenda";
+			};
+			name = Release;
+		};
+		E8833EDC2772CC6F00D69F67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 631B1CAEF5B7A48E9D108872 /* Pods-OmnicasaAgenda-OmnicasaAgendaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.omnicasa.OmnicasaAgendaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OmnicasaAgenda;
+			};
+			name = Debug;
+		};
+		E8833EDD2772CC6F00D69F67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D641187706CCE2DD3F8B6501 /* Pods-OmnicasaAgenda-OmnicasaAgendaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.omnicasa.OmnicasaAgendaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OmnicasaAgenda;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8833EA62772CC6C00D69F67 /* Build configuration list for PBXProject "OmnicasaAgenda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8833ED32772CC6F00D69F67 /* Debug */,
+				E8833ED42772CC6F00D69F67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8833ED52772CC6F00D69F67 /* Build configuration list for PBXNativeTarget "OmnicasaAgenda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8833ED62772CC6F00D69F67 /* Debug */,
+				E8833ED72772CC6F00D69F67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8833ED82772CC6F00D69F67 /* Build configuration list for PBXNativeTarget "OmnicasaAgendaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8833ED92772CC6F00D69F67 /* Debug */,
+				E8833EDA2772CC6F00D69F67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8833EDB2772CC6F00D69F67 /* Build configuration list for PBXNativeTarget "OmnicasaAgendaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8833EDC2772CC6F00D69F67 /* Debug */,
+				E8833EDD2772CC6F00D69F67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E8833EA32772CC6C00D69F67 /* Project object */;
+}
