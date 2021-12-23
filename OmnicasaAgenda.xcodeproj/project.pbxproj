@@ -34,6 +34,7 @@
 		E8E43C9427731FA2004A0014 /* AppointmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8E43C9227731FA2004A0014 /* AppointmentTableViewCell.xib */; };
 		E8E43C96277328B2004A0014 /* AgendaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E43C95277328B2004A0014 /* AgendaViewModel.swift */; };
 		E8E43C98277328E2004A0014 /* AbstractViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E43C97277328E2004A0014 /* AbstractViewModel.swift */; };
+		E8E43C9A27740213004A0014 /* AnimationView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E43C9927740213004A0014 /* AnimationView+Ex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		E8E43C9227731FA2004A0014 /* AppointmentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppointmentTableViewCell.xib; sourceTree = "<group>"; };
 		E8E43C95277328B2004A0014 /* AgendaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaViewModel.swift; sourceTree = "<group>"; };
 		E8E43C97277328E2004A0014 /* AbstractViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractViewModel.swift; sourceTree = "<group>"; };
+		E8E43C9927740213004A0014 /* AnimationView+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnimationView+Ex.swift"; sourceTree = "<group>"; };
 		F407BF80BFDAD9573E861A7F /* Pods-OmnicasaAgenda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmnicasaAgenda.release.xcconfig"; path = "Target Support Files/Pods-OmnicasaAgenda/Pods-OmnicasaAgenda.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -263,6 +265,7 @@
 			children = (
 				E8E43C8827730701004A0014 /* Loopable.swift */,
 				E8E43C8A27731746004A0014 /* Array+Ex.swift */,
+				E8E43C9927740213004A0014 /* AnimationView+Ex.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -528,6 +531,7 @@
 				E8E43C8027730242004A0014 /* OmnicasaWebAPI.swift in Sources */,
 				E8E43C7A2772DF40004A0014 /* OAuthService.swift in Sources */,
 				E8E43C83277304B3004A0014 /* AppointmentsReq.swift in Sources */,
+				E8E43C9A27740213004A0014 /* AnimationView+Ex.swift in Sources */,
 				E8E43C7C2772FE1F004A0014 /* MainViewController.swift in Sources */,
 				E8E43C8E27731A6E004A0014 /* AbstractViewController.swift in Sources */,
 				E8E43C9327731FA2004A0014 /* AppointmentTableViewCell.swift in Sources */,

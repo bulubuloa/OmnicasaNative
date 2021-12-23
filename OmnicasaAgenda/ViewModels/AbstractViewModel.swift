@@ -6,7 +6,12 @@
 //
 
 import Foundation
+import RxSwift
 
-class AbstractViewModel {
+class AbstractViewModel: NSObject {
+    var disposeBag = DisposeBag()
     
+    override init() {
+        super.init()
+    }
 }
