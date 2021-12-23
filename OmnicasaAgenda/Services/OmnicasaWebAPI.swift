@@ -63,6 +63,7 @@ class OmnicasaWebAPI {
                 let disposable = Disposables.create()
                 let url = "\(self.rootAPI)\(endpoint)"
                 
+                print("requestGet => \(url)")
                 AF.request(url, parameters: query, headers: self.headers)
                     .responseDecodable(of: T.self, decoder: OmniAPIDecoder()) {
                         response in
@@ -90,6 +91,7 @@ class OmnicasaWebAPI {
                 let disposable = Disposables.create()
                 let url = "\(self.rootAPI)\(endpoint)"
                 
+                print("requestGet => \(url)")
                 AF.request(url, parameters: query, headers: self.headers)
                     .responseString() {
                         response in

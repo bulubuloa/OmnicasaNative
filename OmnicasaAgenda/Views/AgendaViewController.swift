@@ -31,13 +31,14 @@ class AgendaViewController: AbstractUIViewController {
     override func setupBinding() {
         let input = AgendaViewModel.Input(textChange: searchBar.rx.text.orEmpty.asDriver())
         let output = viewModel.makeBinding(input: input)
-        
+
         output.appointments.bind(to: tableView.rx.items(cellIdentifier: "AppointmentTableViewCell_ID", cellType: AppointmentTableViewCell.self)) {
             (index, element, cell) in
             cell.tfSub.text = element.CombineSubject
             cell.tfDate.text = element.StartTime + element.EndTime
         }.disposed(by: disposeBag)
-        
+
         output.trackingRunning.drive(animation.rx.playAlsoHide).disposed(by: disposeBag)
+        output.trackingRunning.drive(bttFilter.rx.isHidden).disposed(by: disposeBag)
     }
 }
