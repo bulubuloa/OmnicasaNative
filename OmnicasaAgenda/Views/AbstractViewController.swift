@@ -13,4 +13,7 @@ import RxSwift
 class AbstractUIViewController : UIViewController {
     let disposeBag = DisposeBag()
     
+    func setupBinding() {
+        
+    }
 }
