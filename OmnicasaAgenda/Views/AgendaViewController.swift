@@ -21,8 +21,7 @@ class AgendaViewController: AbstractUIViewController {
     
     let viewModel = AgendaViewModel()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func setupUI() {
         animation.loopMode = .loop
         tableView.register(UINib(nibName: "AppointmentTableViewCell", bundle: nil), forCellReuseIdentifier: "AppointmentTableViewCell_ID")
         tableView.rowHeight = UITableView.automaticDimension
@@ -30,7 +29,7 @@ class AgendaViewController: AbstractUIViewController {
     }
     
     override func setupBinding() {
-        let input = AgendaViewModel.Input(textChange: searchBar.rx.text.asObservable())
+        let input = AgendaViewModel.Input(textChange: searchBar.rx.text.orEmpty.asDriver())
         let output = viewModel.makeBinding(input: input)
         
         output.appointments.bind(to: tableView.rx.items(cellIdentifier: "AppointmentTableViewCell_ID", cellType: AppointmentTableViewCell.self)) {
@@ -39,7 +38,6 @@ class AgendaViewController: AbstractUIViewController {
             cell.tfDate.text = element.StartTime + element.EndTime
         }.disposed(by: disposeBag)
         
-        output.trackingRunning.drive(animation.rx.playing)
-            .disposed(by: disposeBag)
+        output.trackingRunning.drive(animation.rx.playAlsoHide).disposed(by: disposeBag)
     }
 }

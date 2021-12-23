@@ -20,7 +20,7 @@ class AgendaViewModel : AbstractViewModel {
     }
     
     struct Input {
-        let textChange: Observable<String?>
+        let textChange: Driver<String>
     }
     
     let api = OmnicasaWebAPI()
@@ -37,14 +37,14 @@ class AgendaViewModel : AbstractViewModel {
             .throttle(RxTimeInterval.seconds(2), scheduler: MainScheduler.instance)
             .delay(RxTimeInterval.seconds(1), scheduler: MainScheduler.instance)
         
-        let observableSearching = observableTextSearch.flatMap { [weak self]
+        let observableSearching = observableTextSearch.flatMapLatest { [weak self]
             item -> Observable<[AppointmentItem]> in
 
             guard let selff = self else {
                 return Observable.empty()
             }
-            let keysearch = item ?? ""
-            let keyFinal = keysearch.trimmingCharacters(in: .whitespacesAndNewlines)
+            
+            let keyFinal = item.trimmingCharacters(in: .whitespacesAndNewlines)
             
             if keyFinal.isEmpty {
                 let getAppointments: Observable<[AppointmentItem]> = selff.api.request(method: .get, enpoint: OmnicasaWebAPIModules.appointments.rawValue, requestModel: selff.query)
