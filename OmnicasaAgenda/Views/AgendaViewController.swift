@@ -42,3 +42,8 @@ class AgendaViewController: AbstractUIViewController {
         output.trackingRunning.drive(bttFilter.rx.isHidden).disposed(by: disposeBag)
     }
 }
+
+
+extension AgendaViewController {
+    
+}

@@ -7,8 +7,10 @@
 
 import Foundation
 
+
 protocol Loopable {
     func allProperties() throws -> [String: Any]
+    func jsonProperties() throws -> String
 }
 
 extension Loopable {
@@ -25,6 +27,7 @@ extension Loopable {
                 continue
             }
             
+            let mirrorChild = Mirror(reflecting: child)
             if type(of: child.value) == Date.self {
                 let dateFormmat = DateFormatter()
                 dateFormmat.dateFormat = "yyyy-MM-dd"

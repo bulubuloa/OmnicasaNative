@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct AppointmentsReq : Loopable {
+struct AppointmentsReq : ParametersReqModel {
     let UserIds: String
     let From: Date
 }

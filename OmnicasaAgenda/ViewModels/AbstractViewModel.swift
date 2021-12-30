@@ -10,6 +10,7 @@ import RxSwift
 
 class AbstractViewModel: NSObject {
     var disposeBag = DisposeBag()
+    let api = OmnicasaWebAPI()
     
     override init() {
         super.init()

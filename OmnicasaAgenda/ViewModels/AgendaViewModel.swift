@@ -23,7 +23,7 @@ class AgendaViewModel : AbstractViewModel {
         let textChange: Driver<String>
     }
     
-    let api = OmnicasaWebAPI()
+    
     let query = AppointmentsReq(UserIds: "109", From: Date.now.addingTimeInterval(-10*24*60*60))
     let appointmentCache = BehaviorRelay<[AppointmentItem]>(value: [])
     
@@ -64,7 +64,7 @@ class AgendaViewModel : AbstractViewModel {
         }.share(replay: 1, scope: .forever)
          
         //<-- that it facking shit
-        flatKeyToSearch.bind(to: appointments).disposed(by: disposeBag)
+       flatKeyToSearch.bind(to: appointments).disposed(by: disposeBag)
 
         let trackingRunning = Observable.merge (
             observableTextSearch.map { _ in true },

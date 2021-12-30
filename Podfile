@@ -10,7 +10,7 @@ target 'OmnicasaAgenda' do
     	pod 'RxCocoa', '6.2.0'
 	pod 'Alamofire', '~> 5.5'
 	pod 'lottie-ios'
-
+	pod 'RxDataSources'
   # Pods for OmnicasaAgenda
 
   target 'OmnicasaAgendaTests' do
