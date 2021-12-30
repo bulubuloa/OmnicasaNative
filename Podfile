@@ -12,6 +12,7 @@ target 'OmnicasaAgenda' do
 	pod 'lottie-ios'
 	pod 'RxDataSources'
 	pod 'SDWebImage'
+	pod 'FontAwesome.swift'
 
   # Pods for OmnicasaAgenda
 

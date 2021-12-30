@@ -25,6 +25,17 @@ class TaskViewController: AbstractUIViewController {
     let viewModel = TaskViewModel()
     let userIds = BehaviorRelay<[Int]>(value: [])
     
+    @objc func addTask() {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "TaskEditorViewController") as! TaskEditorViewController
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add task", style: .plain, target: self, action: #selector(addTask))
+    }
+    
+    
+    
     override func setupUI() {
         tableView.register(UINib(nibName: "TaskTableViewCell", bundle: nil), forCellReuseIdentifier: "TaskTableViewCell")
         tableView.rowHeight = UITableView.automaticDimension

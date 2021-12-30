@@ -19,6 +19,7 @@
 		E83E60F6277DB9F000CD75A7 /* PersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83E60F5277DB9F000CD75A7 /* PersonViewModel.swift */; };
 		E83E60F9277DBA1400CD75A7 /* PropertyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83E60F8277DBA1400CD75A7 /* PropertyViewModel.swift */; };
 		E83E60FD277DBA4500CD75A7 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83E60FC277DBA4500CD75A7 /* SettingViewModel.swift */; };
+		E83E60FF277DFED100CD75A7 /* TaskEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83E60FE277DFED100CD75A7 /* TaskEditorViewController.swift */; };
 		E8717CDF2779FADB00B20D9B /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8717CDE2779FADB00B20D9B /* Common.swift */; };
 		E8833EAF2772CC6C00D69F67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8833EAE2772CC6C00D69F67 /* AppDelegate.swift */; };
 		E8833EB12772CC6C00D69F67 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8833EB02772CC6C00D69F67 /* SceneDelegate.swift */; };
@@ -86,6 +87,7 @@
 		E83E60F5277DB9F000CD75A7 /* PersonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewModel.swift; sourceTree = "<group>"; };
 		E83E60F8277DBA1400CD75A7 /* PropertyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyViewModel.swift; sourceTree = "<group>"; };
 		E83E60FC277DBA4500CD75A7 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
+		E83E60FE277DFED100CD75A7 /* TaskEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskEditorViewController.swift; sourceTree = "<group>"; };
 		E8717CDE2779FADB00B20D9B /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		E8833EAB2772CC6C00D69F67 /* OmnicasaAgenda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OmnicasaAgenda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8833EAE2772CC6C00D69F67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -389,6 +391,7 @@
 			isa = PBXGroup;
 			children = (
 				E8E43C9C2774870D004A0014 /* TaskViewController.swift */,
+				E83E60FE277DFED100CD75A7 /* TaskEditorViewController.swift */,
 			);
 			path = TaskViews;
 			sourceTree = "<group>";
@@ -665,6 +668,7 @@
 				E8E43C7C2772FE1F004A0014 /* MainViewController.swift in Sources */,
 				E8E43CA02774875E004A0014 /* TaskViewModel.swift in Sources */,
 				E8E43C8E27731A6E004A0014 /* AbstractViewController.swift in Sources */,
+				E83E60FF277DFED100CD75A7 /* TaskEditorViewController.swift in Sources */,
 				E8E43C9327731FA2004A0014 /* AppointmentTableViewCell.swift in Sources */,
 				E8E43C8B27731746004A0014 /* Array+Ex.swift in Sources */,
 				E8833EAF2772CC6C00D69F67 /* AppDelegate.swift in Sources */,

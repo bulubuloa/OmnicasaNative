@@ -6,6 +6,7 @@ PODS:
   - AppAuth/Core (1.4.0)
   - AppAuth/ExternalUserAgent (1.4.0)
   - Differentiator (5.0.0)
+  - FontAwesome.swift (1.9.1)
   - lottie-ios (3.3.0)
   - RxCocoa (6.2.0):
     - RxRelay (= 6.2.0)
@@ -24,6 +25,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 5.5)
   - AppAuth
+  - FontAwesome.swift
   - lottie-ios
   - RxCocoa (= 6.2.0)
   - RxDataSources
@@ -35,6 +37,7 @@ SPEC REPOS:
     - Alamofire
     - AppAuth
     - Differentiator
+    - FontAwesome.swift
     - lottie-ios
     - RxCocoa
     - RxDataSources
@@ -46,6 +49,7 @@ SPEC CHECKSUMS:
   Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
   AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
   Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
+  FontAwesome.swift: 6b52cb7be66eacd28cbfaa0ca7ffd0de4a186a1d
   lottie-ios: 6ac74dcc09904798f59b18cb3075c089d76be9ae
   RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
   RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
@@ -53,6 +57,6 @@ SPEC CHECKSUMS:
   RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
   SDWebImage: 4dc3e42d9ec0c1028b960a33ac6b637bb432207b
 
-PODFILE CHECKSUM: a1ac82f11162f24f4f55300f20d79bcd54fca58f
+PODFILE CHECKSUM: a95aecddd7660c37604d9d324bae249c0047b9e8
 
 COCOAPODS: 1.11.2
