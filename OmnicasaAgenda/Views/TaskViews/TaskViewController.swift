@@ -10,6 +10,7 @@ import RxSwift
 import RxCocoa
 import RxRelay
 import RxDataSources
+import SDWebImage
 
 class TaskViewController: AbstractUIViewController {
 
@@ -19,13 +20,13 @@ class TaskViewController: AbstractUIViewController {
     @IBOutlet weak var txtCount: UILabel!
     @IBOutlet var txtFull: UIView!
     @IBOutlet weak var txtFeetching: UILabel!
-    
     @IBOutlet weak var txtMore: UILabel!
+    
     let viewModel = TaskViewModel()
     let userIds = BehaviorRelay<[Int]>(value: [])
     
     override func setupUI() {
-        tableView.register(UINib(nibName: "AppointmentTableViewCell", bundle: nil), forCellReuseIdentifier: "AppointmentTableViewCell_ID")
+        tableView.register(UINib(nibName: "TaskTableViewCell", bundle: nil), forCellReuseIdentifier: "TaskTableViewCell")
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 600
     }
@@ -43,9 +44,14 @@ class TaskViewController: AbstractUIViewController {
         let dataSources = RxTableViewSectionedReloadDataSource<TaskGroup>(
             configureCell: {
                 dataSource, tableView, indexPath, item in
-                let cell = tableView.dequeueReusableCell(withIdentifier: "AppointmentTableViewCell_ID") as! AppointmentTableViewCell
-                cell.tfSub.text = item.typeNameNL
-                cell.tfDate.text = item.comment
+                let cell = tableView.dequeueReusableCell(withIdentifier: "TaskTableViewCell") as! TaskTableViewCell
+                cell.txtType.text = item.comment
+                cell.txtComment.text = item.typeNameNL
+                
+                if let imgURL = item.typeIconUrl {
+                    cell.imgIcon.sd_setImage(with: URL(string: imgURL)  )
+                }
+                
                 return cell
             },
             titleForHeaderInSection: {
@@ -79,7 +85,6 @@ class TaskViewController: AbstractUIViewController {
             userIds.map { String($0) }.joined(separator: ",")
         }.bind(to: bttUsers.rx.title()).disposed(by: disposeBag)
         
-        self.rx.vi
     }
     
     func openUsers() {

@@ -11,6 +11,14 @@
 		2E6190F539ED0BB4F2A25642 /* Pods_OmnicasaAgenda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B6AFF8390C1135D27F8F410 /* Pods_OmnicasaAgenda.framework */; };
 		52C69783B3E2D2073EBE529E /* Pods_OmnicasaAgendaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51403472C162423DB97C00CA /* Pods_OmnicasaAgendaTests.framework */; };
 		E83E60E2277C688200CD75A7 /* ParametersReqModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83E60E1277C688200CD75A7 /* ParametersReqModel.swift */; };
+		E83E60E7277D9E1200CD75A7 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83E60E5277D9E1200CD75A7 /* TaskTableViewCell.swift */; };
+		E83E60E8277D9E1200CD75A7 /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E83E60E6277D9E1200CD75A7 /* TaskTableViewCell.xib */; };
+		E83E60EF277DB9B400CD75A7 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83E60EE277DB9B400CD75A7 /* SettingViewController.swift */; };
+		E83E60F1277DB9C600CD75A7 /* PropertyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83E60F0277DB9C600CD75A7 /* PropertyViewController.swift */; };
+		E83E60F3277DB9D300CD75A7 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83E60F2277DB9D300CD75A7 /* PersonViewController.swift */; };
+		E83E60F6277DB9F000CD75A7 /* PersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83E60F5277DB9F000CD75A7 /* PersonViewModel.swift */; };
+		E83E60F9277DBA1400CD75A7 /* PropertyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83E60F8277DBA1400CD75A7 /* PropertyViewModel.swift */; };
+		E83E60FD277DBA4500CD75A7 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83E60FC277DBA4500CD75A7 /* SettingViewModel.swift */; };
 		E8717CDF2779FADB00B20D9B /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8717CDE2779FADB00B20D9B /* Common.swift */; };
 		E8833EAF2772CC6C00D69F67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8833EAE2772CC6C00D69F67 /* AppDelegate.swift */; };
 		E8833EB12772CC6C00D69F67 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8833EB02772CC6C00D69F67 /* SceneDelegate.swift */; };
@@ -70,6 +78,14 @@
 		D901426AB8BE86BE0BC039E7 /* Pods_OmnicasaAgenda_OmnicasaAgendaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OmnicasaAgenda_OmnicasaAgendaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6399FC3AF21D97DF434D0FB /* Pods-OmnicasaAgenda.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmnicasaAgenda.debug.xcconfig"; path = "Target Support Files/Pods-OmnicasaAgenda/Pods-OmnicasaAgenda.debug.xcconfig"; sourceTree = "<group>"; };
 		E83E60E1277C688200CD75A7 /* ParametersReqModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametersReqModel.swift; sourceTree = "<group>"; };
+		E83E60E5277D9E1200CD75A7 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		E83E60E6277D9E1200CD75A7 /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
+		E83E60EE277DB9B400CD75A7 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		E83E60F0277DB9C600CD75A7 /* PropertyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyViewController.swift; sourceTree = "<group>"; };
+		E83E60F2277DB9D300CD75A7 /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
+		E83E60F5277DB9F000CD75A7 /* PersonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewModel.swift; sourceTree = "<group>"; };
+		E83E60F8277DBA1400CD75A7 /* PropertyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyViewModel.swift; sourceTree = "<group>"; };
+		E83E60FC277DBA4500CD75A7 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
 		E8717CDE2779FADB00B20D9B /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		E8833EAB2772CC6C00D69F67 /* OmnicasaAgenda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OmnicasaAgenda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8833EAE2772CC6C00D69F67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -158,6 +174,70 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		E83E60E3277D8F9200CD75A7 /* AgendaViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E8E43C95277328B2004A0014 /* AgendaViewModel.swift */,
+			);
+			path = AgendaViewModels;
+			sourceTree = "<group>";
+		};
+		E83E60E4277D8FAE00CD75A7 /* AgendaViews */ = {
+			isa = PBXGroup;
+			children = (
+				E8E43C7D2772FF0E004A0014 /* AgendaViewController.swift */,
+			);
+			path = AgendaViews;
+			sourceTree = "<group>";
+		};
+		E83E60E9277DB93B00CD75A7 /* PersonViews */ = {
+			isa = PBXGroup;
+			children = (
+				E83E60F2277DB9D300CD75A7 /* PersonViewController.swift */,
+			);
+			path = PersonViews;
+			sourceTree = "<group>";
+		};
+		E83E60EA277DB94200CD75A7 /* PropertyViews */ = {
+			isa = PBXGroup;
+			children = (
+				E83E60F0277DB9C600CD75A7 /* PropertyViewController.swift */,
+			);
+			path = PropertyViews;
+			sourceTree = "<group>";
+		};
+		E83E60EB277DB94900CD75A7 /* SettingViews */ = {
+			isa = PBXGroup;
+			children = (
+				E83E60EE277DB9B400CD75A7 /* SettingViewController.swift */,
+			);
+			path = SettingViews;
+			sourceTree = "<group>";
+		};
+		E83E60F4277DB9DE00CD75A7 /* PersonViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E83E60F5277DB9F000CD75A7 /* PersonViewModel.swift */,
+			);
+			path = PersonViewModels;
+			sourceTree = "<group>";
+		};
+		E83E60F7277DBA0200CD75A7 /* PropertyViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E83E60F8277DBA1400CD75A7 /* PropertyViewModel.swift */,
+			);
+			path = PropertyViewModels;
+			sourceTree = "<group>";
+		};
+		E83E60FB277DBA3400CD75A7 /* SettingViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E83E60FC277DBA4500CD75A7 /* SettingViewModel.swift */,
+			);
+			path = SettingViewModels;
+			sourceTree = "<group>";
+		};
 		E8833EA22772CC6C00D69F67 = {
 			isa = PBXGroup;
 			children = (
@@ -221,10 +301,13 @@
 		E8833EDE2772D50900D69F67 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E83E60EB277DB94900CD75A7 /* SettingViews */,
+				E83E60EA277DB94200CD75A7 /* PropertyViews */,
+				E83E60E9277DB93B00CD75A7 /* PersonViews */,
+				E83E60E4277D8FAE00CD75A7 /* AgendaViews */,
 				E8E43C9B277486C6004A0014 /* TaskViews */,
 				E8833EE12772D56100D69F67 /* WelcomeViewController.swift */,
 				E8E43C7B2772FE1F004A0014 /* MainViewController.swift */,
-				E8E43C7D2772FF0E004A0014 /* AgendaViewController.swift */,
 				E8E43C8D27731A6E004A0014 /* AbstractViewController.swift */,
 			);
 			path = Views;
@@ -240,8 +323,11 @@
 		E8833EE02772D52000D69F67 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				E83E60FB277DBA3400CD75A7 /* SettingViewModels */,
+				E83E60F7277DBA0200CD75A7 /* PropertyViewModels */,
+				E83E60F4277DB9DE00CD75A7 /* PersonViewModels */,
+				E83E60E3277D8F9200CD75A7 /* AgendaViewModels */,
 				E8E43C9E2774871B004A0014 /* TaskViewModels */,
-				E8E43C95277328B2004A0014 /* AgendaViewModel.swift */,
 				E8E43C97277328E2004A0014 /* AbstractViewModel.swift */,
 			);
 			path = ViewModels;
@@ -293,6 +379,8 @@
 			children = (
 				E8E43C9127731FA2004A0014 /* AppointmentTableViewCell.swift */,
 				E8E43C9227731FA2004A0014 /* AppointmentTableViewCell.xib */,
+				E83E60E5277D9E1200CD75A7 /* TaskTableViewCell.swift */,
+				E83E60E6277D9E1200CD75A7 /* TaskTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -424,6 +512,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E83E60E8277D9E1200CD75A7 /* TaskTableViewCell.xib in Resources */,
 				E8833EBB2772CC6E00D69F67 /* LaunchScreen.storyboard in Resources */,
 				E8E43C9427731FA2004A0014 /* AppointmentTableViewCell.xib in Resources */,
 				E8833EB82772CC6E00D69F67 /* Assets.xcassets in Resources */,
@@ -564,11 +653,15 @@
 				E8833EE22772D56100D69F67 /* WelcomeViewController.swift in Sources */,
 				E83E60E2277C688200CD75A7 /* ParametersReqModel.swift in Sources */,
 				E8F3375727759F0F00F591C9 /* TasksRes.swift in Sources */,
+				E83E60E7277D9E1200CD75A7 /* TaskTableViewCell.swift in Sources */,
+				E83E60F1277DB9C600CD75A7 /* PropertyViewController.swift in Sources */,
 				E8E43C8927730701004A0014 /* Loopable.swift in Sources */,
+				E83E60EF277DB9B400CD75A7 /* SettingViewController.swift in Sources */,
 				E8E43C8027730242004A0014 /* OmnicasaWebAPI.swift in Sources */,
 				E8E43C7A2772DF40004A0014 /* OAuthService.swift in Sources */,
 				E8E43C83277304B3004A0014 /* AppointmentsReq.swift in Sources */,
 				E8E43C9A27740213004A0014 /* AnimationView+Ex.swift in Sources */,
+				E83E60F3277DB9D300CD75A7 /* PersonViewController.swift in Sources */,
 				E8E43C7C2772FE1F004A0014 /* MainViewController.swift in Sources */,
 				E8E43CA02774875E004A0014 /* TaskViewModel.swift in Sources */,
 				E8E43C8E27731A6E004A0014 /* AbstractViewController.swift in Sources */,
@@ -577,8 +670,11 @@
 				E8833EAF2772CC6C00D69F67 /* AppDelegate.swift in Sources */,
 				E8DA26A02775BFE200AFB62D /* TasksReq.swift in Sources */,
 				E8E43C7E2772FF0E004A0014 /* AgendaViewController.swift in Sources */,
+				E83E60FD277DBA4500CD75A7 /* SettingViewModel.swift in Sources */,
 				E8833EB12772CC6C00D69F67 /* SceneDelegate.swift in Sources */,
 				E8E43C9D2774870D004A0014 /* TaskViewController.swift in Sources */,
+				E83E60F6277DB9F000CD75A7 /* PersonViewModel.swift in Sources */,
+				E83E60F9277DBA1400CD75A7 /* PropertyViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

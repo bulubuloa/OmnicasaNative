@@ -11,6 +11,8 @@ target 'OmnicasaAgenda' do
 	pod 'Alamofire', '~> 5.5'
 	pod 'lottie-ios'
 	pod 'RxDataSources'
+	pod 'SDWebImage'
+
   # Pods for OmnicasaAgenda
 
   target 'OmnicasaAgendaTests' do

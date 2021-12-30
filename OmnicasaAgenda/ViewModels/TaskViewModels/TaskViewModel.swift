@@ -39,7 +39,6 @@ extension TaskGroup {
 class TaskViewModel : AbstractViewModel {
     var defaultParameters = TasksReq(PageIndex: 1, PageSize: 50, OrderBy: TaskOrderBy.desc.rawValue,Condition: TasksReqCondition(UserIds: [107]))
     
-    
     struct Input {
         let userIds: BehaviorRelay<[Int]>
         let indexOfItem: Driver<Int>
@@ -71,7 +70,7 @@ class TaskViewModel : AbstractViewModel {
                 feetchParameters -> Observable<[TaskGroup]> in
                 
                 let getTask: Observable<TasksRes> = self.api.request(method: .post, enpoint: OmnicasaWebAPIModules.tasks.rawValue, requestModel: feetchParameters)
-                    .delay(RxTimeInterval.seconds(5), scheduler: MainScheduler.instance)
+                    //.delay(RxTimeInterval.seconds(5), scheduler: MainScheduler.instance)
                     .catchAndReturn(TasksRes(records: []))
                 
                 let results = getTask.map {
@@ -91,47 +90,37 @@ class TaskViewModel : AbstractViewModel {
         }.share()
         
         
-        observableGetTasks.subscribe(
-            onNext: {
-                results in
-                if self.defaultParameters.PageIndex == 1 {
-                    taskResults.accept(results)
-                } else {
-                    taskResults.accept(taskResults.value + results)
-                }
-            }
-        ).disposed(by: disposeBag)
+        observableGetTasks
+            .map {  items in
+                    self.defaultParameters.PageIndex == 1 ? items : taskResults.value + items }
+            .bind(to: taskResults)
+            .disposed(by: disposeBag)
         
-        observableGetTasks.map {
-            items in
-            return items.count > 0
-        }.bind(to: observableTrackingAvailableSource).disposed(by: disposeBag)
+        observableGetTasks
+            .map {  items in
+                    return items.count > 0 }
+            .bind(to: observableTrackingAvailableSource)
+            .disposed(by: disposeBag)
 
-        Observable.merge(
-            observableTrackingParameters.asObservable().map { _ in true },
-            observableTrackingUserIds.map { _ in true },
-            observableGetTasks.map { _ in false }
-        ).bind(to: observableTrackingLoadingStatus).disposed(by: disposeBag)
+        Observable
+            .merge( observableTrackingParameters.asObservable().map { _ in true },
+                    observableTrackingUserIds.map { _ in true },
+                    observableGetTasks.map { _ in false })
+            .bind(to: observableTrackingLoadingStatus).disposed(by: disposeBag)
         
         input.indexOfItem
             .asObservable()
             .distinctUntilChanged()
-            .filter {
-                index in
-                return index == taskResults.value.count - 3 && index != 0
-            }
-            .filter {
-                index in
-                return !observableTrackingLoadingStatus.value && observableTrackingAvailableSource.value
-            }
+            .filter{    index in
+                        return index == taskResults.value.count - 3 && index != 0 }
+            .filter{    index in
+                        return !observableTrackingLoadingStatus.value && observableTrackingAvailableSource.value }
             .throttle(RxTimeInterval.milliseconds(500), scheduler: MainScheduler.instance)
             .subscribe(
-                onNext: {
-                    index in
-                    self.defaultParameters.PageIndex += 1
-                    observableTrackingParameters.accept(self.defaultParameters)
-                }
-            ).disposed(by: disposeBag)
+                onNext: {   index in
+                            self.defaultParameters.PageIndex += 1
+                            observableTrackingParameters.accept(self.defaultParameters)})
+            .disposed(by: disposeBag)
         
         return Output(
             tasks: taskResults,
