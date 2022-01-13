@@ -22,7 +22,9 @@ class AgendaViewController: AbstractUIViewController {
     let viewModel = AgendaViewModel()
     
     override func setupUI() {
+        animation.isHidden = true
         animation.loopMode = .loop
+        
         tableView.register(UINib(nibName: "AppointmentTableViewCell", bundle: nil), forCellReuseIdentifier: "AppointmentTableViewCell_ID")
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 600

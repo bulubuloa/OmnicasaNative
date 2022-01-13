@@ -21,6 +21,7 @@
 		E83E60FD277DBA4500CD75A7 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83E60FC277DBA4500CD75A7 /* SettingViewModel.swift */; };
 		E83E60FF277DFED100CD75A7 /* TaskEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83E60FE277DFED100CD75A7 /* TaskEditorViewController.swift */; };
 		E8717CDF2779FADB00B20D9B /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8717CDE2779FADB00B20D9B /* Common.swift */; };
+		E87CFBD8278C387D00F0D9E3 /* WebAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87CFBD7278C387D00F0D9E3 /* WebAPIResponse.swift */; };
 		E8833EAF2772CC6C00D69F67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8833EAE2772CC6C00D69F67 /* AppDelegate.swift */; };
 		E8833EB12772CC6C00D69F67 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8833EB02772CC6C00D69F67 /* SceneDelegate.swift */; };
 		E8833EB32772CC6C00D69F67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8833EB22772CC6C00D69F67 /* ViewController.swift */; };
@@ -31,6 +32,14 @@
 		E8833ED02772CC6F00D69F67 /* OmnicasaAgendaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8833ECF2772CC6F00D69F67 /* OmnicasaAgendaUITests.swift */; };
 		E8833ED22772CC6F00D69F67 /* OmnicasaAgendaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8833ED12772CC6F00D69F67 /* OmnicasaAgendaUITestsLaunchTests.swift */; };
 		E8833EE22772D56100D69F67 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8833EE12772D56100D69F67 /* WelcomeViewController.swift */; };
+		E8950A42277EB760005283F9 /* QueryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8950A41277EB760005283F9 /* QueryViewController.swift */; };
+		E8950A45277EE01E005283F9 /* QueryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8950A44277EE01E005283F9 /* QueryViewModel.swift */; };
+		E8950A48277EE0DA005283F9 /* QueryResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8950A46277EE0DA005283F9 /* QueryResultTableViewCell.swift */; };
+		E8950A49277EE0DA005283F9 /* QueryResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8950A47277EE0DA005283F9 /* QueryResultTableViewCell.xib */; };
+		E8950A4B277EFF91005283F9 /* OmnicasaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8950A4A277EFF91005283F9 /* OmnicasaAPI.swift */; };
+		E8950A4D277F035E005283F9 /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8950A4C277F035E005283F9 /* PersonModel.swift */; };
+		E8950A4F277F043C005283F9 /* PropertyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8950A4E277F043C005283F9 /* PropertyModel.swift */; };
+		E8950A51277F044D005283F9 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8950A50277F044D005283F9 /* TaskModel.swift */; };
 		E8DA26A02775BFE200AFB62D /* TasksReq.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA269F2775BFE200AFB62D /* TasksReq.swift */; };
 		E8E43C7A2772DF40004A0014 /* OAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E43C792772DF40004A0014 /* OAuthService.swift */; };
 		E8E43C7C2772FE1F004A0014 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E43C7B2772FE1F004A0014 /* MainViewController.swift */; };
@@ -50,6 +59,11 @@
 		E8E43C9D2774870D004A0014 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E43C9C2774870D004A0014 /* TaskViewController.swift */; };
 		E8E43CA02774875E004A0014 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E43C9F2774875E004A0014 /* TaskViewModel.swift */; };
 		E8F3375727759F0F00F591C9 /* TasksRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F3375627759F0F00F591C9 /* TasksRes.swift */; };
+		E8FACE03278C473F006CB760 /* WebAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FACE02278C473F006CB760 /* WebAPIRequest.swift */; };
+		E8FACE05278D33E4006CB760 /* shimmereffect.json in Resources */ = {isa = PBXBuildFile; fileRef = E8FACE04278D33E4006CB760 /* shimmereffect.json */; };
+		E8FACE07278D384C006CB760 /* progress.json in Resources */ = {isa = PBXBuildFile; fileRef = E8FACE06278D384C006CB760 /* progress.json */; };
+		E8FACE09278D38CD006CB760 /* progress2.json in Resources */ = {isa = PBXBuildFile; fileRef = E8FACE08278D38CD006CB760 /* progress2.json */; };
+		E8FFD595278589AA007B3580 /* QueryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FFD594278589AA007B3580 /* QueryModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +103,7 @@
 		E83E60FC277DBA4500CD75A7 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
 		E83E60FE277DFED100CD75A7 /* TaskEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskEditorViewController.swift; sourceTree = "<group>"; };
 		E8717CDE2779FADB00B20D9B /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		E87CFBD7278C387D00F0D9E3 /* WebAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAPIResponse.swift; sourceTree = "<group>"; };
 		E8833EAB2772CC6C00D69F67 /* OmnicasaAgenda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OmnicasaAgenda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8833EAE2772CC6C00D69F67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8833EB02772CC6C00D69F67 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +118,14 @@
 		E8833ECF2772CC6F00D69F67 /* OmnicasaAgendaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmnicasaAgendaUITests.swift; sourceTree = "<group>"; };
 		E8833ED12772CC6F00D69F67 /* OmnicasaAgendaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmnicasaAgendaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E8833EE12772D56100D69F67 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		E8950A41277EB760005283F9 /* QueryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryViewController.swift; sourceTree = "<group>"; };
+		E8950A44277EE01E005283F9 /* QueryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryViewModel.swift; sourceTree = "<group>"; };
+		E8950A46277EE0DA005283F9 /* QueryResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryResultTableViewCell.swift; sourceTree = "<group>"; };
+		E8950A47277EE0DA005283F9 /* QueryResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QueryResultTableViewCell.xib; sourceTree = "<group>"; };
+		E8950A4A277EFF91005283F9 /* OmnicasaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmnicasaAPI.swift; sourceTree = "<group>"; };
+		E8950A4C277F035E005283F9 /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
+		E8950A4E277F043C005283F9 /* PropertyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyModel.swift; sourceTree = "<group>"; };
+		E8950A50277F044D005283F9 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
 		E8DA269F2775BFE200AFB62D /* TasksReq.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksReq.swift; sourceTree = "<group>"; };
 		E8E43C792772DF40004A0014 /* OAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthService.swift; sourceTree = "<group>"; };
 		E8E43C7B2772FE1F004A0014 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +145,11 @@
 		E8E43C9C2774870D004A0014 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 		E8E43C9F2774875E004A0014 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
 		E8F3375627759F0F00F591C9 /* TasksRes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksRes.swift; sourceTree = "<group>"; };
+		E8FACE02278C473F006CB760 /* WebAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAPIRequest.swift; sourceTree = "<group>"; };
+		E8FACE04278D33E4006CB760 /* shimmereffect.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = shimmereffect.json; sourceTree = "<group>"; };
+		E8FACE06278D384C006CB760 /* progress.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = progress.json; sourceTree = "<group>"; };
+		E8FACE08278D38CD006CB760 /* progress2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = progress2.json; sourceTree = "<group>"; };
+		E8FFD594278589AA007B3580 /* QueryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryModel.swift; sourceTree = "<group>"; };
 		F407BF80BFDAD9573E861A7F /* Pods-OmnicasaAgenda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmnicasaAgenda.release.xcconfig"; path = "Target Support Files/Pods-OmnicasaAgenda/Pods-OmnicasaAgenda.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -243,6 +271,9 @@
 		E8833EA22772CC6C00D69F67 = {
 			isa = PBXGroup;
 			children = (
+				E8FACE08278D38CD006CB760 /* progress2.json */,
+				E8FACE06278D384C006CB760 /* progress.json */,
+				E8FACE04278D33E4006CB760 /* shimmereffect.json */,
 				E8E43C8F27731EAA004A0014 /* agendaloading.json */,
 				E8833EAD2772CC6C00D69F67 /* OmnicasaAgenda */,
 				E8833EC42772CC6F00D69F67 /* OmnicasaAgendaTests */,
@@ -303,6 +334,7 @@
 		E8833EDE2772D50900D69F67 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E8950A40277EB49E005283F9 /* QueryViews */,
 				E83E60EB277DB94900CD75A7 /* SettingViews */,
 				E83E60EA277DB94200CD75A7 /* PropertyViews */,
 				E83E60E9277DB93B00CD75A7 /* PersonViews */,
@@ -318,6 +350,10 @@
 		E8833EDF2772D51600D69F67 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E8950A4C277F035E005283F9 /* PersonModel.swift */,
+				E8950A4E277F043C005283F9 /* PropertyModel.swift */,
+				E8950A50277F044D005283F9 /* TaskModel.swift */,
+				E8FFD594278589AA007B3580 /* QueryModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -325,6 +361,7 @@
 		E8833EE02772D52000D69F67 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				E8950A43277EDF2F005283F9 /* QueryViewModels */,
 				E83E60FB277DBA3400CD75A7 /* SettingViewModels */,
 				E83E60F7277DBA0200CD75A7 /* PropertyViewModels */,
 				E83E60F4277DB9DE00CD75A7 /* PersonViewModels */,
@@ -335,6 +372,22 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		E8950A40277EB49E005283F9 /* QueryViews */ = {
+			isa = PBXGroup;
+			children = (
+				E8950A41277EB760005283F9 /* QueryViewController.swift */,
+			);
+			path = QueryViews;
+			sourceTree = "<group>";
+		};
+		E8950A43277EDF2F005283F9 /* QueryViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E8950A44277EE01E005283F9 /* QueryViewModel.swift */,
+			);
+			path = QueryViewModels;
+			sourceTree = "<group>";
+		};
 		E8E43C782772DF01004A0014 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -343,6 +396,7 @@
 				E8E43C792772DF40004A0014 /* OAuthService.swift */,
 				E8E43C7F27730242004A0014 /* OmnicasaWebAPI.swift */,
 				E83E60E1277C688200CD75A7 /* ParametersReqModel.swift */,
+				E8950A4A277EFF91005283F9 /* OmnicasaAPI.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -352,6 +406,7 @@
 			children = (
 				E8E43C82277304B3004A0014 /* AppointmentsReq.swift */,
 				E8DA269F2775BFE200AFB62D /* TasksReq.swift */,
+				E8FACE02278C473F006CB760 /* WebAPIRequest.swift */,
 			);
 			path = RequestModels;
 			sourceTree = "<group>";
@@ -361,6 +416,7 @@
 			children = (
 				E8E43C8527730551004A0014 /* AppointmentsRes.swift */,
 				E8F3375627759F0F00F591C9 /* TasksRes.swift */,
+				E87CFBD7278C387D00F0D9E3 /* WebAPIResponse.swift */,
 			);
 			path = ResponseModels;
 			sourceTree = "<group>";
@@ -383,6 +439,8 @@
 				E8E43C9227731FA2004A0014 /* AppointmentTableViewCell.xib */,
 				E83E60E5277D9E1200CD75A7 /* TaskTableViewCell.swift */,
 				E83E60E6277D9E1200CD75A7 /* TaskTableViewCell.xib */,
+				E8950A46277EE0DA005283F9 /* QueryResultTableViewCell.swift */,
+				E8950A47277EE0DA005283F9 /* QueryResultTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -515,12 +573,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8FACE09278D38CD006CB760 /* progress2.json in Resources */,
+				E8FACE07278D384C006CB760 /* progress.json in Resources */,
+				E8FACE05278D33E4006CB760 /* shimmereffect.json in Resources */,
 				E83E60E8277D9E1200CD75A7 /* TaskTableViewCell.xib in Resources */,
 				E8833EBB2772CC6E00D69F67 /* LaunchScreen.storyboard in Resources */,
 				E8E43C9427731FA2004A0014 /* AppointmentTableViewCell.xib in Resources */,
 				E8833EB82772CC6E00D69F67 /* Assets.xcassets in Resources */,
 				E8E43C9027731EAA004A0014 /* agendaloading.json in Resources */,
 				E8833EB62772CC6C00D69F67 /* Main.storyboard in Resources */,
+				E8950A49277EE0DA005283F9 /* QueryResultTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -653,10 +715,15 @@
 				E8E43C98277328E2004A0014 /* AbstractViewModel.swift in Sources */,
 				E8E43C96277328B2004A0014 /* AgendaViewModel.swift in Sources */,
 				E8717CDF2779FADB00B20D9B /* Common.swift in Sources */,
+				E8950A48277EE0DA005283F9 /* QueryResultTableViewCell.swift in Sources */,
+				E87CFBD8278C387D00F0D9E3 /* WebAPIResponse.swift in Sources */,
 				E8833EE22772D56100D69F67 /* WelcomeViewController.swift in Sources */,
+				E8950A4F277F043C005283F9 /* PropertyModel.swift in Sources */,
+				E8950A45277EE01E005283F9 /* QueryViewModel.swift in Sources */,
 				E83E60E2277C688200CD75A7 /* ParametersReqModel.swift in Sources */,
 				E8F3375727759F0F00F591C9 /* TasksRes.swift in Sources */,
 				E83E60E7277D9E1200CD75A7 /* TaskTableViewCell.swift in Sources */,
+				E8950A42277EB760005283F9 /* QueryViewController.swift in Sources */,
 				E83E60F1277DB9C600CD75A7 /* PropertyViewController.swift in Sources */,
 				E8E43C8927730701004A0014 /* Loopable.swift in Sources */,
 				E83E60EF277DB9B400CD75A7 /* SettingViewController.swift in Sources */,
@@ -668,15 +735,20 @@
 				E8E43C7C2772FE1F004A0014 /* MainViewController.swift in Sources */,
 				E8E43CA02774875E004A0014 /* TaskViewModel.swift in Sources */,
 				E8E43C8E27731A6E004A0014 /* AbstractViewController.swift in Sources */,
+				E8950A51277F044D005283F9 /* TaskModel.swift in Sources */,
 				E83E60FF277DFED100CD75A7 /* TaskEditorViewController.swift in Sources */,
+				E8950A4D277F035E005283F9 /* PersonModel.swift in Sources */,
 				E8E43C9327731FA2004A0014 /* AppointmentTableViewCell.swift in Sources */,
 				E8E43C8B27731746004A0014 /* Array+Ex.swift in Sources */,
 				E8833EAF2772CC6C00D69F67 /* AppDelegate.swift in Sources */,
+				E8FFD595278589AA007B3580 /* QueryModel.swift in Sources */,
+				E8950A4B277EFF91005283F9 /* OmnicasaAPI.swift in Sources */,
 				E8DA26A02775BFE200AFB62D /* TasksReq.swift in Sources */,
 				E8E43C7E2772FF0E004A0014 /* AgendaViewController.swift in Sources */,
 				E83E60FD277DBA4500CD75A7 /* SettingViewModel.swift in Sources */,
 				E8833EB12772CC6C00D69F67 /* SceneDelegate.swift in Sources */,
 				E8E43C9D2774870D004A0014 /* TaskViewController.swift in Sources */,
+				E8FACE03278C473F006CB760 /* WebAPIRequest.swift in Sources */,
 				E83E60F6277DB9F000CD75A7 /* PersonViewModel.swift in Sources */,
 				E83E60F9277DBA1400CD75A7 /* PropertyViewModel.swift in Sources */,
 			);

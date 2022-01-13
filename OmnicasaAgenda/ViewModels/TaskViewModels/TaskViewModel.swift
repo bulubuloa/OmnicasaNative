@@ -69,25 +69,27 @@ class TaskViewModel : AbstractViewModel {
             .flatMapLatest {
                 feetchParameters -> Observable<[TaskGroup]> in
                 
-                let getTask: Observable<TasksRes> = self.api.request(method: .post, enpoint: OmnicasaWebAPIModules.tasks.rawValue, requestModel: feetchParameters)
+                let getTask: Single<TasksRes> = self.api.request(method: .post, enpoint: OmnicasaWebAPIModules.tasks.rawValue, requestModel: feetchParameters)
                     //.delay(RxTimeInterval.seconds(5), scheduler: MainScheduler.instance)
                     .catchAndReturn(TasksRes(records: []))
                 
-                let results = getTask.map {
-                    item in
-                    return item.records
-            }.map {
-                items -> [TaskGroup] in
-                let group = Dictionary.init(grouping: items, by: { $0.date?.justDate() })
-                var result = [TaskGroup]()
-                for item in group {
-                    let head = TaskGroup(header: "", date: item.key!, items: item.value)
-                    result.append(head)
-                }
-                return result.sorted { a,b in a.date > b.date }
+                let results = getTask
+                    .map {
+                        item in
+                        return item.records }
+                    .map {
+                        items -> [TaskGroup] in
+                        let group = Dictionary.init(grouping: items, by: { $0.date?.justDate() })
+                        var result = [TaskGroup]()
+                        for item in group {
+                            let head = TaskGroup(header: "", date: item.key!, items: item.value)
+                            result.append(head)
+                        }
+                        return result.sorted { a,b in a.date > b.date }
+                    }
+                return results.asObservable()
             }
-            return results
-        }.share()
+            .share()
         
         
         observableGetTasks

@@ -19,6 +19,8 @@ enum OmnicasaWebAPIError: Error {
     case inValidParameters
     case inValidURL
     case jsonError
+    case expired
+    case unknow
 }
 
 enum WebAPIMethod {
@@ -50,9 +52,9 @@ class OmniAPIDecoder: JSONDecoder {
 class OmnicasaWebAPI {
     
     let rootAPI: String = "https://webapinew.omnicasa.com/13498.1.0"
-    let headers = HTTPHeaders(["Authorization": "Bearer xKZ2nLqVcIT_LFVYqsaoabbbWyo73xVIgxDV-Q_LxH4.lGAlVB7rDcVqP72KGXI95GLGk0E6MuLUfSw6yNfDgGY"])
+    let headers = HTTPHeaders(["Authorization": "Bearer 5zTfRd4krojTaF7YMkMrIUH2PMMv9xY3pcgh2acnDE4.EXrpixeEgeEmNMoVs0XdJYsXJHRbDcs-UGxP_K3YpbA"])
     
-    func request<T: Codable>(method: WebAPIMethod, enpoint: String, requestModel: ParametersReqModel?) -> Observable<T> {
+    func request<T: Codable>(method: WebAPIMethod, enpoint: String, requestModel: ParametersReqModel?) -> Single<T> {
         var parameters: [String: Any] = [:]
         if let query = requestModel {
             parameters = try! query.getDicts()
@@ -73,88 +75,73 @@ class OmnicasaWebAPI {
      
     
      */
-    func requestGet<T: Codable>(endpoint: String, query: [String: Any] = [:]) -> Observable<T> {
-        do {
-            return Observable<T>.create {
-                observe in
-                
-                let disposable = Disposables.create()
-                let url = "\(self.rootAPI)\(endpoint)"
-                
-                print("requestGet => \(url)")
-                AF.request(url, parameters: query, headers: self.headers)
-                    .responseDecodable(of: T.self, decoder: OmniAPIDecoder()) {
-                        response in
-                        guard let responseFinal = response.value else {
-                            observe.onError(OmnicasaWebAPIError.jsonError)
-                            return
-                        }
-                        
-                        observe.onNext(responseFinal)
-                        observe.onCompleted()
+    func requestGet<T: Codable>(endpoint: String, query: [String: Any] = [:]) -> Single<T> {
+        let singleReturn = Single<T>.create {
+            single in
+            
+            let url = "\(self.rootAPI)\(endpoint)"
+            print("requestGet => \(url)")
+            let request = AF.request(url, parameters: query, headers: self.headers)
+                .responseDecodable(of: T.self, decoder: OmniAPIDecoder()) {
+                    response in
+                    
+                    guard let requestRespose = response.response else {
+                        single(.failure(OmnicasaWebAPIError.unknow))
+                        return
                     }
+                    
+                    switch requestRespose.statusCode {
+                        case 200:
+                            if let responseFinal = response.value {
+                                single(.success(responseFinal))
+                            } else {
+                                single(.failure(OmnicasaWebAPIError.jsonError))
+                            }
+                        case 401:
+                            single(.failure(OmnicasaWebAPIError.expired))
+                        default:
+                            single(.failure(OmnicasaWebAPIError.unknow))
+                    }
+                }
                 
-                return disposable
+            return Disposables.create() {
+                request.cancel()
             }
-        } catch {
-            return Observable.empty()
         }
+        return singleReturn
     }
     
-    func requestPost<T: Codable>(endpoint: String, query: [String: Any] = [:]) -> Observable<T> {
-        do {
-            return Observable<T>.create {
-                observe in
-                
-                let disposable = Disposables.create()
-                let url = "\(self.rootAPI)\(endpoint)"
-                
-                print("requestPost => \(url)")
-                
-                AF.request(url, method: .post, parameters: query, encoding: JSONEncoding.default, headers: self.headers)
-                    .responseDecodable(of: T.self, decoder: OmniAPIDecoder()) {
-                        response in
-                        guard let responseFinal = response.value else {
-                            observe.onError(OmnicasaWebAPIError.jsonError)
-                            return
-                        }
-                        
-                        observe.onNext(responseFinal)
-                        observe.onCompleted()
+    func requestPost<T: Codable>(endpoint: String, query: [String: Any] = [:]) -> Single<T> {
+        return Single<T>.create {
+            single in
+            
+            let url = "\(self.rootAPI)\(endpoint)"
+            print("requestPost => \(url)")
+            let request = AF.request(url, method: .post, parameters: query, encoding: JSONEncoding.default, headers: self.headers)
+                .responseDecodable(of: T.self, decoder: OmniAPIDecoder()) {
+                    response in
+                    guard let requestRespose = response.response else {
+                        single(.failure(OmnicasaWebAPIError.unknow))
+                        return
                     }
-                
-                return disposable
-            }
-        } catch {
-            return Observable.empty()
-        }
-    }
-    
-    func requestGetString(endpoint: String, query: [String: Any] = [:]) -> Observable<String> {
-        do {
-            return Observable<String>.create {
-                observe in
-                
-                let disposable = Disposables.create()
-                let url = "\(self.rootAPI)\(endpoint)"
-                
-                print("requestGet => \(url)")
-                AF.request(url, parameters: query, headers: self.headers)
-                    .responseString() {
-                        response in
-                        guard let responseFinal = response.value else {
-                            observe.onError(OmnicasaWebAPIError.jsonError)
-                            return
-                        }
-                        
-                        observe.onNext(responseFinal)
-                        observe.onCompleted()
+                    
+                    switch requestRespose.statusCode {
+                        case 200:
+                            if let responseFinal = response.value {
+                                single(.success(responseFinal))
+                            } else {
+                                single(.failure(OmnicasaWebAPIError.jsonError))
+                            }
+                        case 401:
+                            single(.failure(OmnicasaWebAPIError.expired))
+                        default:
+                            single(.failure(OmnicasaWebAPIError.unknow))
                     }
-                
-                return disposable
+                }
+            
+            return Disposables.create() {
+                request.cancel()
             }
-        } catch {
-            return Observable.empty()
         }
     }
 }

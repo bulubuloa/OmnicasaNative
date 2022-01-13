@@ -8,7 +8,7 @@
 import Foundation
 
 
-protocol ParametersReqModel : Codable {
+protocol ParametersReqModel : Encodable {
     func getDicts() -> [String: Any]
 }
 

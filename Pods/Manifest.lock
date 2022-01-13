@@ -7,6 +7,7 @@ PODS:
   - AppAuth/ExternalUserAgent (1.4.0)
   - Differentiator (5.0.0)
   - FontAwesome.swift (1.9.1)
+  - LoadingShimmer (1.0.3)
   - lottie-ios (3.3.0)
   - RxCocoa (6.2.0):
     - RxRelay (= 6.2.0)
@@ -21,16 +22,19 @@ PODS:
   - SDWebImage (5.12.1):
     - SDWebImage/Core (= 5.12.1)
   - SDWebImage/Core (5.12.1)
+  - Shimmer (1.0.2)
 
 DEPENDENCIES:
   - Alamofire (~> 5.5)
   - AppAuth
   - FontAwesome.swift
+  - LoadingShimmer
   - lottie-ios
   - RxCocoa (= 6.2.0)
   - RxDataSources
   - RxSwift (= 6.2.0)
   - SDWebImage
+  - Shimmer
 
 SPEC REPOS:
   trunk:
@@ -38,25 +42,29 @@ SPEC REPOS:
     - AppAuth
     - Differentiator
     - FontAwesome.swift
+    - LoadingShimmer
     - lottie-ios
     - RxCocoa
     - RxDataSources
     - RxRelay
     - RxSwift
     - SDWebImage
+    - Shimmer
 
 SPEC CHECKSUMS:
   Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
   AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
   Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
   FontAwesome.swift: 6b52cb7be66eacd28cbfaa0ca7ffd0de4a186a1d
+  LoadingShimmer: dd681218498ec9648f572b845a7299b9c62e8e30
   lottie-ios: 6ac74dcc09904798f59b18cb3075c089d76be9ae
   RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
   RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
   RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
   RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
   SDWebImage: 4dc3e42d9ec0c1028b960a33ac6b637bb432207b
+  Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
 
-PODFILE CHECKSUM: a95aecddd7660c37604d9d324bae249c0047b9e8
+PODFILE CHECKSUM: dac3420ab61ac50dc2a04995c20320f7d49826f9
 
 COCOAPODS: 1.11.2

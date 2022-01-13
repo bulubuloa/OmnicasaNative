@@ -37,38 +37,38 @@ class AgendaViewModel : AbstractViewModel {
             .distinctUntilChanged()
             .debounce(RxTimeInterval.seconds(1), scheduler: MainScheduler.instance)
             
-        let flatKeyToSearch = observableTextSearch.flatMapLatest {
-            item -> Observable<[AppointmentItem]> in
-            let keySearch = item.trimmingCharacters(in: .whitespacesAndNewlines)
-            if keySearch.isEmpty {
-                
-                let getAppointments: Observable<[AppointmentItem]> = self.api.request(method: .get, enpoint: OmnicasaWebAPIModules.appointments.rawValue, requestModel: self.query)
-                let result = getAppointments.map {
-                    item in
-                    return item.uniques(by: \.Id)
-                    
-                }.do(
-                    onNext: {
-                        item in
-                        self.appointmentCache.accept(item)
-                    }
-                )
-                
-                return result
-           } else {
-               return Observable.just(self.appointmentCache.value.filter {
-                   item1 in
-                   return item1.CombineSubject.lowercased().contains(keySearch.lowercased())
-                })
-            }
-        }.share(replay: 1, scope: .forever)
-         
+//        let flatKeyToSearch = observableTextSearch.flatMapLatest {
+//            item -> Observable<[AppointmentItem]> in
+//            let keySearch = item.trimmingCharacters(in: .whitespacesAndNewlines)
+//            if keySearch.isEmpty {
+//
+//                let getAppointments: Single<[AppointmentItem]> = self.api.request(method: .get, enpoint: OmnicasaWebAPIModules.appointments.rawValue, requestModel: self.query).asObservable()
+//                let result = getAppointments.map {
+//                    item in
+//                    return item.uniques(by: \.Id)
+//
+//                }.do(
+//                    onNext: {
+//                        item in
+//                        self.appointmentCache.accept(item)
+//                    }
+//                )
+//
+//                return result
+//           } else {
+//               return Observable.just(self.appointmentCache.value.filter {
+//                   item1 in
+//                   return item1.CombineSubject.lowercased().contains(keySearch.lowercased())
+//                })
+//            }
+//        }.share(replay: 1, scope: .forever)
+//
         //<-- that it facking shit
-       flatKeyToSearch.bind(to: appointments).disposed(by: disposeBag)
+       //flatKeyToSearch.bind(to: appointments).disposed(by: disposeBag)
 
         let trackingRunning = Observable.merge (
-            observableTextSearch.map { _ in true },
-            flatKeyToSearch.map { _ in false }
+            observableTextSearch.map { _ in true }
+            //flatKeyToSearch.map { _ in false }
         ).asDriver(onErrorJustReturn: false)
         
         return Output(trackingRunning: trackingRunning, appointments: appointments)

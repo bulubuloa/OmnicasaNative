@@ -14,25 +14,44 @@ class TaskEditorViewController: AbstractUIViewController {
     @IBOutlet weak var bttSave: UIButton!
     @IBOutlet weak var stackView: UIStackView!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    lazy var bttChoosePerson: UIButton = {
+        let btt = UIButton()
+        btt.setTitle("Choose person", for: .normal)
+        return btt
+    }()
 
-        // Do any additional setup after loading the view.
-    }
+    lazy var stackPerson: UIStackView = {
+        let subviews: [UIView] = [bttChoosePerson]
+        let view = UIStackView(arrangedSubviews: subviews)
+        view.axis = .vertical
+        view.spacing = 5
+        view.backgroundColor = .red
+        return view
+    }()
     
     override func setupUI() {
         bttClose.titleLabel?.font = UIFont.fontAwesome(ofSize: 22, style: .brands)
         bttClose.setTitle(String.fontAwesomeIcon(name: .github), for: .normal)
+        
+        stackView.distribution = .fillProportionally
+        stackView.addArrangedSubview(stackPerson)
+        //bttChoosePerson = UIButton(frame: CGRect(x: 0,y: 0, width: stackView.frame.width, height: 50))
+        //stackView.addArrangedSubview(bttChoosePerson)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    override func setupBinding() {
+        self.bttChoosePerson.rx.tap.subscribe(
+            onNext: { [self]
+                item in
+                self.openSearchPerson()
+            }
+        )
     }
-    */
-
+    
+    @objc func openSearchPerson() {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "QueryViewController") as! QueryViewController
+        vc.module = .searchProperty
+        
+        self.present(vc, animated: true, completion: nil)
+    }
 }

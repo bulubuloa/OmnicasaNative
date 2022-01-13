@@ -13,6 +13,8 @@ target 'OmnicasaAgenda' do
 	pod 'RxDataSources'
 	pod 'SDWebImage'
 	pod 'FontAwesome.swift'
+	pod 'Shimmer'
+	pod 'LoadingShimmer'
 
   # Pods for OmnicasaAgenda
 
